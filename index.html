@@ -1,0 +1,60 @@
+<html>
+<head>
+	<title>MM App by Om Patil</title>
+	<style>
+	*{font-size:40px;font-family:arial;}
+	.bg{background-image:url(img1.jpg);
+	width:100%;
+	height:10vw;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;}
+	form{margin-top:50px;width:55vw;height:35vw;padding:2vw;
+backdrop-filter:blur(1vw);
+background:white;
+display:block;
+padding:1vw;
+opacity:0.5;}
+	</style>
+</head>
+
+<body class="bg">
+<center>
+	<form>
+	<h1>MOTIVATIONAL MSG WALLAH</h1>
+	<h2 id="msg"/>
+	</form>
+	
+	<script>
+		function show()
+		{
+			let msg=document.getElementById("msg")
+			
+			let messages=["Push Yourself Because No One Else Is Going To Do It For You.",
+					"Do Something Today That Your Future Self Will Thank You For.",
+					"Motivation Is What Gets You Started, Habit Is What Keeps You Going.",
+					"If You Change Your Mindset, You Have The Ability To Change Your Whole World.",
+					"It Is Always The Simple That Produces The Marvelous.",
+					"If You Can Imagine It, You You Can Achieve It. If You Can Dream It, You Can Become It.",
+					"You Only Fail When You Stop Trying.",
+					"Two Things Define Us. Our Patience When We Have Nothing And Our Attitude When We Have Everything.",
+					"The harder you work for something, the greater you'll feel when you achieve it.",
+					"The only way to do great work is to love what you do.",
+					"Hardships often prepare ordinary people for an extraordinary destiny.",
+					"You are braver than you believe, stronger than you seem, and smarter than you think.",
+					"Failure will never overtake me if my determination to succeed is strong enough.",
+					"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+					"You are never too old to set another goal or to dream a new dream.",
+					];
+
+
+
+			let r=parseInt(Math.random()*messages.length);
+			msg.innerHTML=messages[r];
+		}
+		show();
+		setInterval(show, 10000);	
+	</script>
+</center>
+</body>
+</html>
